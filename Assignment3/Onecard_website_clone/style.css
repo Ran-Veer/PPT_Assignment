@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ---------------------------------- Navbar Section Start ---------------------------- */
+nav{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242B2E;
+}
+
+nav .logo img{
+    height: 4rem;
+    margin-left: 1rem;
+}
+.nav-menu .list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav-menu .list a{
+    text-decoration: none;
+    margin-right: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: .3s;
+}
+.nav-menu .list a:hover{
+    color: #66b3ff;
+}
+nav .login-btn button{
+    color: #fff;
+    background-color: #0072E1;
+    padding: .5rem;
+    font-size: 1rem;
+    width: 8rem;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: none;
+    margin-right: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s;
+}
+nav .login-btn button:hover{
+    background-color: #fff;
+    color: #0072E1;
+}
+nav .login-btn i{
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+}
+
+/* ------------------------------- Navbar Section End ----------------------------- */
+
+/*  ------------------------- Hero Setion Start ---------------------*/
+.Hero-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left-section{
+    width: 50vw;
+}
+.left-section h3{
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin: 5rem 0 .5rem 2rem;
+    cursor: default;
+}
+.left-section h1{
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    color: #1893F7;
+    margin: 0 0 2rem 2rem;
+    cursor: default;
+}
+.left-section h4{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #1893F7;
+    margin: 0 0 1.5rem 2rem;
+    cursor: default;
+}
+.left-section p{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    margin-left: 2rem;
+    word-spacing:2px;
+    cursor: default;
+}
+.left-section img{
+    width: 70%;
+    margin: 0 0 2rem 2rem;
+}
+.right-section{
+    width: 50vw;
+}
+.right-section video{
+    height: 80vh;
+    width: 50vw;
+    cursor: none;
+}
+
+/* ----------------------------- Hero Section Ends ---------------- */
+
+/* -------------------- Media Query --------------- */
+ 
+@media screen and (max-width: 768px){
+    .nav-menu, .hide-btn{
+        display: none;
+    }
+    nav .login-btn i{
+        display: block;
+        color: white;
+        margin-right: 2rem;
+    }
+    .Hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-section video{
+        width: 100vw;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .left-section img{
+        width: 65%;
+    }
+}
