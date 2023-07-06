@@ -115,13 +115,33 @@ nav .login-btn i{
 /* -------------------- Media Query --------------- */
  
 @media screen and (max-width: 768px){
-    .nav-menu, .hide-btn{
-        display: none;
+    .hide-btn{
+        display: block;
+    }
+    nav{
+        height:100%;
+    }
+    .navbar-resp{
+        height: 100%;
+    }
+    .nav-menu .list{
+        flex-direction: column;
+    }
+    .hide-nav{
+       opacity: 0;
     }
     nav .login-btn i{
         display: block;
         color: white;
-        margin-right: 2rem;
+        position: relative;
+        bottom: 2rem;
+        left: 3rem;
+        cursor: pointer;
+    }
+    nav .login-btn button{
+        width: 5rem;
+        position: relative;
+        right: 3rem;
     }
     .Hero-section{
         display: flex;
