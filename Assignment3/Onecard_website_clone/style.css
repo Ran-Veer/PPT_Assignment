@@ -119,29 +119,35 @@ nav .login-btn i{
         display: block;
     }
     nav{
-        height:100%;
+        width: 100%;
     }
     .navbar-resp{
         height: 100%;
     }
     .nav-menu .list{
         flex-direction: column;
+        display: none;
     }
-    .hide-nav{
-       opacity: 0;
+    #menu-bar .active{
+        display: block;
     }
-    nav .login-btn i{
+    #menu-bar .list-items{
+        display: block;
+    }
+    
+    nav .login-btn .burger-menu{
         display: block;
         color: white;
         position: relative;
-        bottom: 2rem;
-        left: 3rem;
+        bottom: 1rem;
+        left: 4rem;
         cursor: pointer;
     }
     nav .login-btn button{
         width: 5rem;
         position: relative;
-        right: 3rem;
+        right: 2rem;
+        top: 1rem;
     }
     .Hero-section{
         display: flex;
