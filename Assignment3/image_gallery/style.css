@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 80vh;
+    width: 99vw;
+    row-gap: .7rem;
+    margin-top: 2rem;
+    margin-left: .7rem;
+
+}
+.container .box{
+    height: 42vh;
+    width: 32.2vw;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.container .img-1{
+    width:26rem;
+    height: 18rem;
+}
+/* ------------------------ Media Query ------------------ */
+
+@media screen and (max-width: 480px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .container .box{
+        width: 95vw;
+    }
+    .container .img-1{
+        width:28rem;
+        height: 21.5rem;
+    }
+}
