@@ -139,6 +139,81 @@ nav .login-btn i{
     padding-bottom: .5rem;
     cursor: default;
 }
+/* ----------------------------- Information Section Ends ----------- */
+
+/*  ------------------- Footer Section Starts ---------------- */
+footer{
+    padding: 4rem 2rem 2rem 2rem;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .one-card p{
+    color: #b9b9b9;
+    font-family: sans-serif;
+    word-spacing: .5rem;
+    line-height: 1.5rem;
+    cursor: default;
+}
+footer .navigation{
+    display: flex;
+    flex-direction: column;
+}
+footer .navigation{
+    display: flex;
+    flex-direction: column;
+}
+footer .navigation h1, .form h1, .one-card h1{
+    color:#f4f4f4;
+    font-family: sans-serif;
+    margin-bottom: 1.1rem;
+    font-size: 1.8rem;
+    cursor: default;
+}
+footer .navigation a{
+    text-decoration: none;
+    color: #b9b9b9;
+    font-family: sans-serif;
+    margin-bottom: .8rem;
+    font-size: 1rem;
+    transition: .2s ease-in-out;
+}
+footer .navigation a:hover{
+    color: #0072E1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form ::placeholder{
+    width: 50rem;
+    color: #0072E1;
+    padding-left: .2rem;
+    font-size: .8rem;
+}
+form input{
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: .4rem;
+    padding-left: .5rem;
+    outline: none;
+    font-size: 1.1rem;
+    color: #0072E1;
+}
+form button{
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: .4rem;
+    color: #fff;
+    background-color: #0072E1;
+    font-size: .9rem;
+    font-family: sans-serif;
+    border: none;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+/* ---------------------------- Footer Section Ends ----------------- */
 
 /* -------------------- Media Query --------------- */
  
@@ -198,5 +273,13 @@ nav .login-btn i{
     }
     .info-section .info-container p{
         color: #050505;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+    footer .navigation a{
+       width: 30vw;
     }
 }
